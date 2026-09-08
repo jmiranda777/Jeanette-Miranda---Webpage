@@ -1,0 +1,57 @@
+/*
+    COLOR PALETTE:
+    Light Lavender - #F3E8FF
+    Dark Purple - #4C1D95
+    White - #FFFFFF
+    Dark Gray - #1F2937
+    Purple - #7C3AED
+    Pink - #EC4899
+    Blue-Purple - #6366F1
+*/
+
+/* Styles the entire page */
+body {
+    background-color: #F3E8FF; /*Sets the background color of the page */
+    font-family: Arial, sans-serif; /* Sets the font that will be used throught the page */
+    color: #1F2937 /* Sets the default text color */
+}
+
+/* Styles the header section */
+header {
+    background-color: #4C1D95; /* Sets the background color of the header */
+    color: white; /* Sets the text color to white */
+    text-align: center; /* Centers the text inside the header */
+    padding: 20px; /* Adds space inside the header */
+}
+
+/* Styles the navigation section */
+nav {
+    background-color:#FFFFFF; /* Sets the navigation background to white */
+    padding: 15px; /* Adds space inside the navigation area */
+}
+
+/* Styles the links inside the navigation section */
+nav a {
+    color: #6366F1
+}
+
+/* Styles all h2 headings */
+h2 {
+    color: #7C3AED
+
+}
+
+/* Styles the first paragraph */
+.first {
+    color: #EC4899; 
+}
+
+/* Styles the second paragraph */
+.second {
+    color: #4C1D95; 
+}
+
+/* Styles the third paragraph */
+.third {
+    color: #6366F1 
+}
