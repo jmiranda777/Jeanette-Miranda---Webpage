@@ -13,7 +13,20 @@
 body {
     background-color: #F3E8FF; /*Sets the background color of the page */
     font-family: Arial, sans-serif; /* Sets the font that will be used throught the page */
-    color: #1F2937 /* Sets the default text color */
+    color: #1F2937; /* Sets the default text color */
+    margin: 0; /* Removes the default margin around the page */
+}
+
+/* Styles the main container of the page */
+#container {
+    width: 80%; /* Makes the container 80% of the page width */
+    margin: auto; /* Centers the container of the page */
+}
+
+/* Adds a border and sets box sizingf for the header, naviation, and main sections */
+header, aside, main {
+    border: 1px solid black; /* Adds black border around each section */
+    box-sizing: border-box; /* Includes the border and padding in the total width of the elements */
 }
 
 /* Styles the header section */
@@ -22,17 +35,42 @@ header {
     color: white; /* Sets the text color to white */
     text-align: center; /* Centers the text inside the header */
     padding: 20px; /* Adds space inside the header */
+    width: 100%; /* Makes the header take up the full container width */
+}
+
+/* Styles the area containing the navigation and main content*/
+#midcontain {
+    width: 100%;
+    clear:both;
 }
 
 /* Styles the navigation section */
-nav {
+aside {
     background-color:#FFFFFF; /* Sets the navigation background to white */
     padding: 15px; /* Adds space inside the navigation area */
+    width: 25%; /* Makes the navigation section 25% of the container width */
+    float: left; /* Places the naviagtion section to the left side */
+    min-height: 600px; /* Sets the minimum height of the navigation section */
 }
 
 /* Styles the links inside the navigation section */
-nav a {
+aside a {
     color: #6366F1
+}
+
+/* styles the main content section */
+main {
+    width: 75%; /* Makes the main content 75% of container width */
+    float: right; /* Plces main content on right side */
+    padding: 20px; /* Adds space inside the main content area */
+    min-height: 600px; /* Sets the minimum height of the main content section */
+}
+
+/* Styles the image inside the main content */
+main img {
+    float: left; /* Places image to left side of text */
+    margin-right: 20px; /* Adds space between image and the text */
+    margin-bottom: 10px; /* Adds space below the image */
 }
 
 /* Styles all h2 headings */
