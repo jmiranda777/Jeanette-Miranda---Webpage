@@ -9,11 +9,33 @@
     Blue-Purple - #6366F1
 */
 
+/*Default Theme */
+:root {
+    --background-color: #F3E8FF;
+    --text-color: #1F2937;
+    --header-color: #4C1D95;
+    --nav-color: #FFFFFF;
+    --heading-color: #7C3AED;
+    --pink-color: #EC4899;
+    --link-color: #6366F1;
+}
+
+/* Dark Theme */
+.dark_mode {
+    --background-color: #1F2937;
+    --text-color: #F3E8FF;
+    --header-color: #111827;
+    --nav-color: #374151;
+    --heading-color: #C4B5FD;
+    --pink-color: #F472B6;
+    --link-color: #818CF8;
+}
+
 /* Styles the entire page */
 body {
-    background-color: #F3E8FF; /*Sets the background color of the page */
+    background-color: var(--background-color); /*Sets the background color of the page */
     font-family: Arial, sans-serif; /* Sets the font that will be used throught the page */
-    color: #1F2937; /* Sets the default text color */
+    color: var(--text-color); /* Sets the default text color */
     margin: 0; /* Removes the default margin around the page */
 }
 
@@ -31,7 +53,7 @@ header, aside, main {
 
 /* Styles the header section */
 header {
-    background-color: #4C1D95; /* Sets the background color of the header */
+    background-color: var(--header-color); /* Sets the background color of the header */
     color: white; /* Sets the text color to white */
     text-align: center; /* Centers the text inside the header */
     padding: 20px; /* Adds space inside the header */
@@ -46,7 +68,7 @@ header {
 
 /* Styles the navigation section */
 aside {
-    background-color:#FFFFFF; /* Sets the navigation background to white */
+    background-color: var(--nav-color); /* Sets the navigation background to white */
     padding: 15px; /* Adds space inside the navigation area */
     width: 25%; /* Makes the navigation section 25% of the container width */
     float: left; /* Places the naviagtion section to the left side */
@@ -55,7 +77,7 @@ aside {
 
 /* Styles the links inside the navigation section */
 aside a {
-    color: #6366F1
+    color: var(--link-color); /* Sets the link color to blue-purple */
 }
 
 /* styles the main content section */
@@ -75,21 +97,36 @@ main img {
 
 /* Styles all h2 headings */
 h2 {
-    color: #7C3AED
-
+    color: var(--heading-color);
 }
 
 /* Styles the first paragraph */
 .first {
-    color: #EC4899; 
+    color: var(--pink-color);
 }
 
 /* Styles the second paragraph */
 .second {
-    color: #4C1D95; 
+    color: var(--header-color);
 }
 
 /* Styles the third paragraph */
 .third {
-    color: #6366F1 
+    color: var(--link-color);
+}
+
+/* Styles the theme button */
+#theme_toggler {
+    padding: 10px 15px; /* Adds padding inside the button */
+    margin-top: 10px; /* Adds space above the button */
+    border: none; /* Removes the default border of the button */
+    border-radius: 5px; /* Rounds the corners of the button */
+    background-color: var(--header-color); /* Sets the background color of the button */
+    color: white; /* Sets the text color of the button to white */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    font-size: 14px; /* Sets the font size of the button text */
+}
+
+#theme_toggler:hover {
+    opacity: 0.8; /* Reduces the opacity of the button when hovered over */
 }
